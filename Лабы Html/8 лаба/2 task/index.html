@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="31_lab.css" />
+</head>
+
+<body>
+    <p>Выберите цвет и нажмите кнопку. Текст, приведенный ниже, изменит свой цвет:</p>
+    <pre id="tex">
+And are you beautiful and pale,
+With yellow hair,
+Like her?
+I'd want you beautiful and pale
+The way I've dreamed you were
+</pre>
+    <fieldset>
+        <legend>Цвета:</legend>
+        <input type="radio" name="gender" value="red" id="red"> <span class="r dot"> </span> <br>
+        <input type="radio" name="gender" value="yellow" id="ye"> <span class="y dot"> </span><br>
+        <input type="radio" name="gender" value="green" id="g"> <span class="g dot"> </span> <br>
+        <input type="radio" name="gender" value="#b3b300" id="bg"> <span class="bg dot"> </span> <br>
+        <input type="radio" name="gender" value="#ff6666" id="o"> <span class="o dot"> </span> <br>
+        <input type="radio" name="gender" value="#ace600" id="wg"> <span class="wg dot"> </span> <br>
+    </fieldset>
+    <button type="button" onclick="changeCol()">Перекрасить</button>
+    <script src="app.js"></script>
+</body>
+
+</html>

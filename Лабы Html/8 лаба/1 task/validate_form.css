@@ -1,0 +1,56 @@
+* {
+    margin: 10px;
+}
+
+form {
+    background: #a4a4c1;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #9494b8;
+    font-size: 25px;
+}
+
+span {
+    color: white;
+}
+
+button {
+    position: relative;
+    left: 50%;
+    border-radius: 25px;
+    background: #d1d1e0;
+    color: #777;
+    width: 10%;
+}
+
+input,
+select {
+    color: #777;
+}
+
+.header {
+    color: white;
+}
+
+#pas,
+#age,
+#sq,
+#login,
+#em {
+    width: 21%;
+}
+
+.invalid { border-color: red; }
+.valid  { border-color:green; }
+
+/* input:invalid:not(:placeholder-shown) {border-color: red;} 
+input:valid:not(:placeholder-shown) {border-color: green;} */
+
+/* input:valid {
+    border-color: green;
+  }
+input:invalid {
+    border-color: red;
+} */

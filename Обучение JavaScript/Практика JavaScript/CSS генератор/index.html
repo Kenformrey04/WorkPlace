@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+    <title>Js Learn</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="inputs">
+        <p>Верхний левый угол
+            <input type="range" id="rtl" value="0" min="0" max="100" step="1" oninput="rangeChanged(0)">
+            <input type="text" id="ttl" value="0" oninput="textChanged(0)">
+        </p>
+        <p>Верхний правый угол
+            <input type="range" id="rtr" value="0" min="0" max="100" step="1" oninput="rangeChanged(1)">
+            <input type="text" id="ttr" value="0" oninput="textChanged(1)">
+        </p>
+        <p>Нижний правый угол
+            <input type="range" id="rbr" value="0" min="0" max="100" step="1" oninput="rangeChanged(2)">
+            <input type="text" id="tbr" value="0" oninput="textChanged(2)">
+        </p>
+        <p>Нижний левый угол
+            <input type="range" id="rbl" value="0" min="0" max="100" step="1" oninput="rangeChanged(3)">
+            <input type="text" id="tbl" value="0" oninput="textChanged(3)">
+        </p>
+    </div>
+
+    <div id="block"></div>
+    <p id="screen">border-radius: </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

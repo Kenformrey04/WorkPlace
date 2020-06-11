@@ -1,0 +1,51 @@
+// @import "_nullstyle";
+
+// переменная задает значения для того, где она используется
+$fz: 140px;
+$fp: 50px;
+
+// $color_1: #000;
+// $color_2: rgb(223, 13, 13);
+
+.background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: $fz;
+    .Rectangle-2 {
+        position: absolute;
+        padding: 120px;
+    }
+    .circle {
+        width: 50%;
+        height: 50%;
+    }
+    h1 {
+        font-size: 24px;
+        position: absolute;
+        margin-top: $fz;
+        z-index: 3;
+    }
+}
+
+.login__form {
+    font-size: 20px;
+    margin: 130px 0 0 15px;
+    position: absolute;
+    input {
+        width: 200px;
+        height: 27px;
+    }
+    .Email {
+        padding: $fp 0 0 0;
+    }
+    .passWord {
+        padding: $fp 0 50px 0;
+    }
+    .btn {
+        width: 200px;
+        height: 30px;
+        color: rgb(156, 38, 38);
+        background-color: rgb(31, 140, 243);
+    }
+}
