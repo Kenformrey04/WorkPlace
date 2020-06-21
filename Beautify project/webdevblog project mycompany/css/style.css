@@ -1,0 +1,500 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header__logo {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 56px;
+  margin-left: 12%;
+}
+
+header nav {
+  margin-top: 56px;
+  margin-left: 29%;
+}
+
+header nav .topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header nav .topnav a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+
+.icon header nav .topnav {
+  display: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*Направление блоков в колонку*/
+  width: 100%;
+}
+
+main .main__welcome {
+  background: #000;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+
+main .main__welcome p {
+  color: #999999;
+  font-size: 20px;
+}
+
+main .main__welcome h1 {
+  color: #999999;
+  font-size: 44px;
+  font-family: "Open Sans", sans-serif;
+}
+
+main .main__welcome .mycompanyBold {
+  color: #fcac45;
+  font-weight: bold;
+}
+
+main .main__welcome .mycompanyLight {
+  color: #999999;
+  font-weight: lighter;
+}
+
+main .main__welcome .Bold {
+  color: #999999;
+  font-weight: bold;
+}
+
+main .wrapper {
+  width: 76%;
+  margin: auto;
+}
+
+main h1:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  widows: 100px;
+  padding-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+main .main__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+
+main .main__about .about__right {
+  margin-left: 175px;
+}
+
+main .main__about .about__right h1 {
+  display: inline-block;
+  font-size: 34px;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 3px solid #fcac45;
+  padding-bottom: 20px;
+}
+
+main .main__about .about__right .normalFont {
+  font-weight: normal;
+}
+
+main .main__about .about__right p {
+  font-size: 18px;
+  color: #6c6c6c;
+  margin: 30px 0 20px 0;
+}
+
+main .main__about .about__right .boldSemiboldFont {
+  color: #5a5a5a;
+  font-weight: bold;
+}
+
+main .main__about .about__right .ItalicFont {
+  font-style: italic;
+  color: #656565;
+}
+
+main .main__about .about__right li {
+  color: #5c5c5c;
+  background: url(img/mark.png) 0px no-repeat;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+main .main__about .about__left .mw-100 {
+  min-width: 100%;
+}
+
+main .main__team {
+  background: #000;
+  text-align: center;
+  padding: 100px 165 0px 0;
+  color: #fff;
+}
+
+main .main__team h1 {
+  font-size: 44px;
+  padding: 100px 0 26px 0;
+}
+
+main .main__team .team__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 160px 0;
+}
+
+main .main__team .team__cards .card {
+  margin: 0 40px;
+}
+
+main .main__team .team__cards .card .photo {
+  background: #d7d7d7;
+  width: 1 25px;
+  height: 1 25px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+main .main__team .team__cards .card .name {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+main .main__team .team__cards .card .position {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+main .main__team .team__cards .card .about__position {
+  font-size: 14px;
+}
+
+main .main__services i {
+  font-size: 16px;
+}
+
+main .main__services h1 {
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+
+main .main__services h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+main .main__services p {
+  color: #6c6c6c;
+  margin-bottom: 100px;
+}
+
+main .main__services .services__cards {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+
+main .main__services .services__cards p {
+  font-size: 14px;
+}
+
+main .main__services .services__cards .services__card {
+  font-size: 14px;
+}
+
+main .main__clients {
+  background: #000;
+  padding: 100px 0 205px 0;
+  color: #fff;
+  text-align: center;
+}
+
+main .main__clients h1 {
+  margin-bottom: 30px;
+}
+
+main .main__clients img {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+main .main__clients .lightfont {
+  font-weight: lighter;
+}
+
+main .main__work {
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+main .main__work h1 {
+  margin-bottom: 30px;
+}
+
+main .main__work p {
+  margin-bottom: 175px;
+  color: #6c6c6c;
+}
+
+main .main__work img:hover {
+  opacity: 0.9;
+}
+
+main .main__testimonials {
+  background: #000;
+  text-align: center;
+  padding-bottom: 170px;
+  color: #fff;
+}
+
+main .main__testimonials p {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #e7e7e7;
+  font-weight: bold;
+}
+
+main .main__testimonials h1 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+main .main__testimonials .lightfonth1 {
+  font-weight: lighter;
+}
+
+main .main__testimonials .boldfonttestimonials {
+  color: #9b9b9b;
+  font-weight: bold;
+}
+
+main .main__testimonials .lightfonttestimonials {
+  color: #8a8a8a;
+  font-weight: lighter;
+}
+
+main .contact__from {
+  padding: 100px 0 100px 0;
+}
+
+main .contact__from h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+main .contact__from h1,
+main .contact__from p {
+  text-align: center;
+}
+
+main .contact__from .contact__wrapper {
+  width: 753px;
+  margin: 0 auto;
+  color: #636363;
+}
+
+main .contact__from .contact__wrapper .italicfont {
+  font-weight: italic;
+  font-size: 16px;
+}
+
+main .contact__from .contact__wrapper .red {
+  color: red;
+}
+
+main .contact__from .contact__wrapper .form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+main .contact__from .contact__wrapper .form__inputs p {
+  text-align: left;
+}
+
+main .contact__from .contact__wrapper input {
+  width: 360px;
+  height: 45px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  border: dashed;
+}
+
+main .contact__from .contact__wrapper textarea {
+  width: 100%;
+  height: 163px;
+}
+
+main .contact__from .contact__wrapper input:first-of-type {
+  margin-right: 23px;
+}
+
+main .contact__from .contact__wrapper input,
+main .contact__from .contact__wrapper textarea {
+  border: 1px solid #000;
+  margin-top: 5px;
+}
+
+main .contact__from .contact__wrapper .button__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .contact__from .contact__wrapper .button__block input[type="submit"] {
+  width: 165px;
+  height: 40px;
+  background: #fcac45;
+  color: #fff;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1 200px) {
+  nav {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  nav {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  nav {
+    width: 100%;
+  }
+  nav .topnav {
+    position: relative;
+    top: 50px;
+    left: -200px;
+    height: 340px;
+  }
+  nav .topnav a .icon {
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .main__welcome {
+    padding: 50px 0 50px 0;
+  }
+  .main__welcome p {
+    font-size: 14px;
+  }
+  .main__welcome h1 {
+    font-size: 25px;
+  }
+  .main__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__about .mw-100 {
+    max-width: 100%;
+  }
+  .main__about .about__right {
+    text-align: center;
+    margin-left: 0;
+  }
+  .main__about .about__right li {
+    text-align: left;
+  }
+  .main__about .about__right h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .main__team .team__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__services .services__cards {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .main__work .gallery .line1 img:not(:first-child) {
+    display: none;
+  }
+  .main__work .gallery .line2 img:not(:first-child) {
+    display: none;
+  }
+  .main__work .gallery .line3 img:not(:first-child) {
+    display: none;
+  }
+  input[type="submit"] {
+    width: 140px;
+    height: 35px;
+    background: #fcac45;
+    color: #fff;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .form__inputs {
+    display: -ms-grid;
+    display: grid;
+    grid-column: auto auto auto;
+  }
+}

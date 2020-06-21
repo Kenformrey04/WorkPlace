@@ -1,6 +1,0 @@
-// const myModal = $.modal()
-
-
-
-
-

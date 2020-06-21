@@ -92,24 +92,72 @@
 
 // binary search
 
-function binarySearch(list, item) {
-  let low = 0;
-  let high = list.length - 1;// 4
-  while (low <= high) {
-      let mid = (low + high);// 4
-      let guess = list[mid];// 9
-      if (guess === item) {
-        return mid
-      }
-      if (guess > item) { // true
-        high = mid - 1; //3
-      }
-      else {
-        low = mid + 1;
-      }
-  }
-}
+// function binarySearch(list, item) {
+//   let low = 0;
+//   let high = list.length - 1;// 4
+//   while (low <= high) {
+//       let mid = (low + high);// 4
+//       let guess = list[mid];// 9
+//       if (guess === item) {
+//         return mid
+//       }
+//       if (guess > item) { // true
+//         high = mid - 1; //3
+//       }
+//       else {
+//         low = mid + 1;
+//       }
+//   }
+// }
 
-myList = [1,3,5,7,9]
-console.log(binarySearch(myList,7));
-console.log(binarySearch(myList,-1));
+// myList = [1,3,5,7,9]
+// console.log(binarySearch(myList,7));
+// console.log(binarySearch(myList,-1));
+
+//! task 1
+//? составить функцию, которая заполняет массив целыми числами по формуле
+//? m[i] = a * (i - b) где a and b целые числа, которые передаются в функцию в
+//? качестве параметров
+
+// let arr1 = [],
+//     arr2 = [],
+//     arr3 = [];
+
+// function one(a, b) {
+//   for (let i = 0; i < b; i++) {
+//     arr1[i] = a * (i - b);
+//     arr1.push(arr1[i]);
+//   }
+//   return `First task: <br> arr: ${arr1} <br> <br>`; ;
+// }
+// document.querySelector(".one_task").innerHTML = one(7, 14);
+// console.log(one(7, 14));
+
+//! task 2
+//? составить функцию, которая выводит массив на экран в виде двух строк:
+//? в первой - значения, во второй - номера элементов массива.
+
+// function two(a, b) {
+//   for (let i = 0; i < b; i++) {
+//     arr2[i] = a * (i - b);
+//     arr2.push(arr2[i]);
+//     arr3.push(i);
+//   }
+//   return `Two task: <br> arr: ${arr2} <br> number elements: ${arr3}`;
+// }
+// document.querySelector(".two_task").innerHTML = two(5,10);
+// console.log(two(5,10));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
