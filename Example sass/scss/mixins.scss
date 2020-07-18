@@ -1,0 +1,20 @@
+// создание mixin
+@mixin fontz($f, $c) {
+    font-size: $f;
+    color: $c;
+}
+
+@mixin link($link, $hover, $active, $visited) {
+    a {
+        color: $link;
+        &:hover {
+            color: darken($link,50%);
+        }
+        &:active {
+            color: $active;
+        }
+        @content
+
+
+    }
+}

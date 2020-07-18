@@ -1,0 +1,19 @@
+@import "_nullstyle";
+@import "mixins";
+@import "variables";
+
+.block {
+    font-size: 25px;
+    line-height: 20px;
+    padding: 30px;
+    @include link($color_1, red, blue,green);
+    .header {
+        @include link($color_1, red, blue,green) {
+            background: #000;
+            &:visited {
+                color:#f50a0a;
+            }
+        }
+    }
+    
+}
